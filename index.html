@@ -6,26 +6,29 @@
     <title>Defensor Cba</title>
     <link rel="shortcut icon" type="image/png" href="https://github.com/DEVSOHFTT/defensorcba/blob/main/Icono.png?raw=true">
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        .iframe-container {
+        html, body {
             width: 100%;
-            max-width: 1200px;
-            height: 90vh;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             border: none;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <iframe 
-        class="iframe-container"
         src="https://www.appsheet.com/start/0b883cd1-0782-42d2-9b0d-44c45a120150"
         title="Aplicación Defensor Cba"
         aria-label="Aplicación Defensor Cba"
