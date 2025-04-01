@@ -2,11 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Defensor Cba</title>
-    <link rel="icon" type="image/png" href="https://github.com/DEVSOHFTT/defensorcba/blob/main/Icono.png?raw=true">
+    <link rel="shortcut icon" type="image/png" href="https://github.com/DEVSOHFTT/defensorcba/blob/main/Icono.png?raw=true">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .iframe-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 90vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="https://www.appsheet.com/start/0b883cd1-0782-42d2-9b0d-44c45a120150" width="100%" height="800px"></iframe>
+    <iframe 
+        class="iframe-container"
+        src="https://www.appsheet.com/start/0b883cd1-0782-42d2-9b0d-44c45a120150"
+        title="Aplicación Defensor Cba"
+        aria-label="Aplicación Defensor Cba"
+        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+        loading="lazy">
+    </iframe>
 </body>
 </html>
